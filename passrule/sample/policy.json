@@ -1,0 +1,69 @@
+{
+  "random": {
+    "kind": "bytes",
+    "hex": "035a0ff1228bafaa2b17a74d08b07ee4d51b28a924ecbc36b63a8c20cc27bc3945738d84704a7e9ea39f8cff56806fff3c7527e09af3537ebfb57e98805e80dd4b052d02b8e5a892197309503fb41ecd5f4fcefbee94b36086462e9ff3c950bb8a9453c0a054ef8c602a10fc7443e933851c2e58163d041a40bb1e709939a18c3956865ec8feb15289a6d6cf801069507999acbab420b78d90d8e96f4493f582893a0f7281dc834a820a2f1b1d5b502aba1998fa2ddbbf0f2a2d454d7daddea0e71456afcbe36c337641ce0f1b6596e47a610e1dcc0552be2dd45d42043714ff80350dcbd478a727ae73526675c105f2"
+  },
+  "strategies": [
+    {
+      "id": "s1",
+      "length": 12,
+      "count": 2,
+      "classes": ["lower", "upper", "digit"],
+      "symbols": "",
+      "exclude_ambiguous": false,
+      "require_classes": 3,
+      "max_run": 1,
+      "keyboard_run": 3,
+      "blacklist": ["pass", "admin"],
+      "max_attempts": 8
+    },
+    {
+      "id": "s2",
+      "length": 16,
+      "count": 2,
+      "classes": ["lower", "upper", "digit", "symbol"],
+      "symbols": "<>+-",
+      "exclude_ambiguous": true,
+      "require_classes": 4,
+      "max_run": 2,
+      "keyboard_run": 4,
+      "blacklist": ["love"],
+      "max_attempts": 8
+    },
+    {
+      "id": "s3",
+      "length": 6,
+      "count": 2,
+      "classes": ["lower", "upper", "digit"],
+      "symbols": "",
+      "exclude_ambiguous": true,
+      "require_classes": 3,
+      "max_run": 1,
+      "keyboard_run": 0,
+      "blacklist": [],
+      "max_attempts": 12
+    },
+    {
+      "id": "s4",
+      "length": 10,
+      "count": 2,
+      "classes": ["upper", "digit", "symbol"],
+      "symbols": "!@#",
+      "exclude_ambiguous": false,
+      "require_classes": 3,
+      "max_run": 1,
+      "keyboard_run": 0,
+      "blacklist": ["QQ"],
+      "max_attempts": 6
+    }
+  ],
+  "samples": [
+    { "id": "e1", "password": "Xk7mQr2vTp9w" },
+    { "id": "e2", "password": "J4hTq8Lm-Zr2Wx6V" },
+    { "id": "e3", "password": "Kp7mQ2" },
+    { "id": "e4", "password": "K7Q!2#M9XW" },
+    { "id": "e5", "password": "Xk7mQr2vTp9~" },
+    { "id": "e6", "password": "Admin8888qwe" },
+    { "id": "e7", "password": "kfjdhguriepw" }
+  ]
+}
